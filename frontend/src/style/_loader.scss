@@ -1,0 +1,43 @@
+.big-loader__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background: #fff;
+    display: grid;
+    place-items: center;
+    .loader {
+        width: 50px;
+        height: 50px;
+        border: 4px dotted transparent;
+        border-radius: 50%;
+        border-top: 4px dotted;
+        border-bottom: 4px dotted;
+        animation: spin 0.7s linear infinite;
+    }
+}
+.mini-loader__container {
+    display: grid;
+    place-items: center;
+    .loader {
+        width: 20px;
+        height: 20px;
+        border: 2px dotted transparent;
+        border-radius: 50%;
+        border-top: 2px dotted;
+        border-bottom: 2px dotted;
+        border-right: 2px dotted;
+        animation: spin 0.7s linear infinite;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

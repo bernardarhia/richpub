@@ -1,0 +1,21 @@
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 4rem;
+
+    // Nav list
+    .nav-lists__container {
+        .nav-lists {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.8rem;
+            list-style: none;
+            li a {
+                text-decoration: none;
+                color: #000;
+            }
+        }
+    }
+}

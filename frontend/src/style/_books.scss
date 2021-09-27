@@ -1,0 +1,43 @@
+.book-list__container {
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    .book-card {
+        background: #fff;
+        border-radius: 5px;
+        .card-image {
+            img {
+                width: 100%;
+            }
+        }
+        .card-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.4rem 1rem;
+            .title {
+                a {
+                    text-decoration: none;
+                    font-size: 14px;
+                    color: #000;
+                }
+            }
+        }
+        .author-text {
+            color: #ab4af8;
+            padding: 0.4rem 1rem;
+            font-weight: 700;
+            font-size: 14px;
+        }
+        .card-icon {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            padding: 0rem 1rem 0.5rem 1rem;
+            svg {
+                color: rgba(0, 0, 0, 0.63);
+            }
+        }
+    }
+}

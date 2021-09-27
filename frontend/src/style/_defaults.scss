@@ -1,0 +1,95 @@
+// Default variables
+$primary-color: #333;
+$secondary-color: #eee;
+$btn-small: 0.5rem 2rem;
+$btn-medium: 0.7rem 2.8rem;
+$body-background: #f7f6f9d1;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.4;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    background-color: $body-background;
+}
+.container {
+    max-width: 54rem;
+}
+
+.container-big {
+    max-width: 70rem;
+}
+
+// Styling for shadow
+@function shadow($type) {
+    @if ($type == "small") {
+        @return 12px 5px 40px rgba(0, 0, 0, 0.103);
+    } @else if ($type == "medium") {
+        @return 12px 5px 40px rgba(0, 0, 0, 0.103);
+    } @else if ($type == "large") {
+        @return 12px 5px 40px rgba(0, 0, 0, 0.103);
+    }
+}
+.small-shadow {
+    box-shadow: shadow("small");
+}
+.medium-shadow {
+    box-shadow: shadow("medium");
+}
+.large-shadow {
+    box-shadow: shadow("large");
+}
+
+// Style for border
+@function border-radius($type) {
+    @if ($type == "small") {
+        @return 4px;
+    } @else if ($type == "medium") {
+        @return 8px;
+    } @else if ($type == "large") {
+        @return 12px;
+    }
+}
+.small-border {
+    border-radius: border-radius("small");
+}
+.medium-border {
+    border-radius: border-radius("medium");
+}
+.large-border {
+    border-radius: border-radius("large");
+}
+
+// item titles
+h1 {
+    margin: 5rem 0 0 0;
+    color: #757575;
+}
+.title-small {
+    font-size: 1.5em;
+}
+.title-medium {
+    font-size: 1.8em;
+}
+.title-large {
+    font-size: 2.2em;
+}
+label {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600px;
+    color: rgb(65, 65, 65);
+}
+label {
+    display: block;
+}
+.file-label {
+    background: #fff;
+}
+input[type="file"] {
+    display: none;
+}

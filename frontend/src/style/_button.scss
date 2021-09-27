@@ -1,0 +1,29 @@
+.btn {
+    border: none;
+    background-color: none;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn-small {
+    padding: $btn-small;
+}
+.btn-medium {
+    padding: $btn-medium;
+}
+.btn-primary {
+    background: #d49ffd;
+    color: #fff;
+}
+.btn-full {
+    width: 100%;
+}
+.btn-secondary {
+    background: #69d68f;
+    color: #fff;
+}
+.btn-blue {
+    background: #6b9af3;
+    color: #fff;
+}

@@ -1,0 +1,15 @@
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background: $body-background;
+    display: grid;
+    place-items: center;
+
+    .login-form {
+        background: #fff;
+        width: 400px;
+        padding: 2rem;
+        border-radius: 5px;
+        box-shadow: shadow("small");
+    }
+}
